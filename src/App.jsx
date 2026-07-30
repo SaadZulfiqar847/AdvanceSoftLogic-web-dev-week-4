@@ -68,7 +68,10 @@ function App() {
 
         {loading && (
           <section className="loading-state">
-            <div className="spinner"></div>
+            <div className="weather-loader" aria-label="Loading weather data">
+              <span className="loader-sun"></span>
+              <span className="loader-cloud"></span>
+            </div>
             <p>Reading the sky...</p>
           </section>
         )}
